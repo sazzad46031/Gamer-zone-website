@@ -136,7 +136,73 @@ body {
     background-color: #4EC5F7;
 }
 
+/*--------------funny videos------------*/
+.funny-videos{
+    padding: 0 240px;
+}
+.funny-videos-title{
+    margin-bottom: 16px;
+}
+.funny-videos-desc {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 48px;
+}
 
+.funny-videos-content {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 2px solid #FF42A5;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.card:hover .overlay {
+    height: 100%;
+}
+
+.overlay img,
+.overlay h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay h4 {
+    color: #FF42A5;
+    top: 60%;
+}
+
+.caption {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 24px;
+    
+}
+.funny-videos-card{
+    display: flex;
+    gap: 24px;
+}
 /*-------------online games----------*/
 .online-games {
     display: flex;
@@ -160,14 +226,16 @@ body {
     width: 40%;
 }
 
-.online-games-title {
+.online-games-title,
+.funny-videos-title {
     color: #0B0223;
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
 }
 
-.play-games {
+.play-games,
+.videos {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -225,14 +293,15 @@ body {
 
 /*-----------footer-----------*/
 .footer {
-    background-color:#0B0223;
+    background-color: #0B0223;
     text-align: center;
 }
 
 .amer {
     color: #fff;
 }
-.footer-nav{
+
+.footer-nav {
     margin-bottom: 66px;
     display: flex;
     justify-content: center;
@@ -246,22 +315,26 @@ body {
     font-size: 18px;
     font-weight: 600;
 }
-.social-icon-container{
+
+.social-icon-container {
     margin-bottom: 64px;
     display: flex;
     justify-content: center;
 }
+
 .social-icon-items {
     width: 40px;
     height: 40px;
     margin-right: 40px;
     color: #fff;
 }
-.policy{
+
+.policy {
     margin-bottom: 18px;
     display: flex;
     justify-content: center;
 }
+
 .policy a {
     color: rgba(255, 255, 255, 0.60);
     font-size: 16px;
@@ -276,12 +349,12 @@ body {
     font-weight: 500;
     padding-bottom: 130px;
 }
-.footer-logo-container{
+
+.footer-logo-container {
     margin-bottom: 66px;
     margin-top: 120px;
     display: inline-flex;
 }
-
 
 
 
@@ -304,6 +377,7 @@ body {
     .nav-container {
         padding: 0 30px;
         text-align: center;
+        margin-top: 50px;
     }
 
     .nav-items-container a {
@@ -359,28 +433,43 @@ body {
         width: 30px;
         height: 30px;
     }
-    .footer-nav{
+
+    .footer-nav {
         flex-wrap: wrap;
         padding: 20px;
     }
-    .footer-nav a{
+
+    .footer-nav a {
         margin-right: 30px;
     }
-    .social-icon-container{
+
+    .social-icon-container {
         flex-wrap: wrap;
         gap: 30px;
         padding-left: 30px;
     }
-    .social-icon-items{
+
+    .social-icon-items {
         margin-right: 60px;
     }
-    .policy{
+
+    .policy {
         flex-wrap: wrap;
         gap: 20px;
     }
-    .copyright{
+
+    .copyright {
         margin-top: 50px;
         width: 300px;
         padding-left: 60px;
+    }
+    .funny-videos-card{
+        flex-direction: column;
+    }
+    .funny-videos{
+        padding: 30px;
+    }
+    .caption{
+        text-align: center;
     }
 }
