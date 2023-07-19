@@ -176,6 +176,7 @@ body {
 
 .card:hover .overlay {
     height: 100%;
+    border: 2px solid #FF42A5;
 }
 
 .overlay img,
