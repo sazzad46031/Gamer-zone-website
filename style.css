@@ -170,7 +170,6 @@ body {
     bottom: 0;
     overflow: hidden;
     border-radius: 16px;
-    border: 2px solid #FF42A5;
     background-color: rgba(0, 0, 0, 0.75);
     transition: 0.5s ease;
 }
@@ -368,7 +367,7 @@ body {
 /*------------tablet device-----------*/
 @media screen and (max-width:1023px) {}
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:576px) {
 
     .nav-container,
     .nav-items-container {
