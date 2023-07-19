@@ -178,11 +178,59 @@ body {
     line-height: 30px;
 }
 
+
+/*-----------popular games-----------*/
+.popular-games{
+    padding: 120px 249px ;
+}
+.popular-games-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    padding: 8px 10px;
+}
+
+.popular-games-container:hover{
+    border: 1px solid #FF42A5;
+    border-radius: 50px;
+    
+    
+}
+.popular-games-container:hover .popular-games-name{
+    color: #FF42A5;
+}
+.popular-games-name {
+    color: #0B0223;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 18px;
+}
+.popular-flex-container{
+    display: flex;
+    margin-bottom: 27px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------media query--------------*/
 /*------------tablet device-----------*/
 @media screen and (max-width:1023px) {}
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:425px) {
 
     .nav-container,
     .nav-items-container {
@@ -217,13 +265,30 @@ body {
         margin-left: 0;
         width: 100%;
     }
-    .online-games{
+
+    .online-games {
         flex-direction: column-reverse;
         padding: 30px;
     }
-    .online-games-content{
+
+    .online-games-content {
         text-align: center;
         margin-bottom: 30px;
     }
-
+    .popular-flex-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 0;
+    }
+    .popular-games{
+        padding: 50px 5px 0;
+    }
+    .popular-games-name{
+        font-size: 8px;
+        margin-left: 2px;
+    }
+    .popular-games-container img{
+        width: 30px;
+        height: 30px;
+    }
 }
