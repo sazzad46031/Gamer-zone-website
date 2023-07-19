@@ -365,8 +365,49 @@ body {
 
 /*-------------media query--------------*/
 /*------------tablet device-----------*/
-@media screen and (max-width:1023px) {}
-
+@media screen and (min-width:577px) and (max-width:1023px) {
+    .nav-container{
+        padding: 30px;
+    }
+    .nav-container,
+    .nav-items-container {
+        flex-direction: column;
+    }
+    .banner,.funny-videos{
+        padding: 30px;
+    }
+    .banner-image{
+        width: 100%;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .funny-videos-card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .online-games{
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+    .online-games-content{
+        margin-bottom: 40px;
+    }
+    .popular-flex-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+    .popular-games{
+        padding: 30px;
+    }
+    .footer-nav {
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 30px;
+    }
+}
+/*---------------mobile device--------------*/
 @media screen and (max-width:576px) {
 
     .nav-container,
