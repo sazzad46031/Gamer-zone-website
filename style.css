@@ -172,6 +172,7 @@ body {
     border-radius: 16px;
     border: 2px solid #FF42A5;
     background-color: rgba(0, 0, 0, 0.75);
+    transition: 0.5s ease;
 }
 
 .card:hover .overlay {
